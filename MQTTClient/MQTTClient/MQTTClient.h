@@ -1,25 +1,29 @@
 //
-//  MQTTClient.h
-//  MQTTClient
+//  MQTTCLient.h
+//  MQTTCLient
 //
-//  Created by Christoph Krey on 13.01.14.
-//  Copyright © 2013-2016 Christoph Krey. All rights reserved.
+//  Created by Chris Hinkle on 10/19/16.
+//  Copyright © 2016 Christoph Krey. All rights reserved.
 //
 
-/**
- Include this file to use MQTTClient classes in your application
- 
- @author Christoph Krey krey.christoph@gmail.com
- @see http://mqtt.org
- */
+#import <UIKit/UIKit.h>
 
-#import <Foundation/Foundation.h>
+//! Project version number for MQTTCLient.
+FOUNDATION_EXPORT double MQTTCLientVersionNumber;
 
-#import <MQTTClient/MQTTSession.h>
-#import <MQTTClient/MQTTSessionLegacy.h>
-#import <MQTTClient/MQTTSessionSynchron.h>
-#import <MQTTClient/MQTTMessage.h>
-#import <MQTTClient/MQTTTransport.h>
-#import <MQTTClient/MQTTCFSocketTransport.h>
-#import <MQTTClient/MQTTCoreDataPersistence.h>
-#import <MQTTClient/MQTTSSLSecurityPolicyTransport.h>
+//! Project version string for MQTTCLient.
+FOUNDATION_EXPORT const unsigned char MQTTCLientVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <MQTTCLient/PublicHeader.h>
+
+
+#import "MQTTSession.h"
+#import "MQTTDecoder.h"
+#import "MQTTSessionLegacy.h"
+#import "MQTTSessionSynchron.h"
+#import "MQTTMessage.h"
+#import "MQTTTransport.h"
+#import "MQTTCFSocketTransport.h"
+#import "MQTTCoreDataPersistence.h"
+#import "MQTTSSLSecurityPolicyTransport.h"
+#import "MQTTSessionManager.h"

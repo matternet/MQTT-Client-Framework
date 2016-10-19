@@ -91,7 +91,7 @@
     self.maxSize = MQTT_MAX_SIZE;
     self.maxMessages = MQTT_MAX_MESSAGES;
 
-#if TARGET_OS_IPHONE == 1
+#if MQTTClient_ISNOT_EXTENSION == 1
     self.backgroundTask = UIBackgroundTaskInvalid;
 
     NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
@@ -127,7 +127,7 @@
     return self;
 }
 
-#if TARGET_OS_IPHONE == 1
+#if MQTTClient_ISNOT_EXTENSION == 1
 - (void)appWillResignActive {
     [self disconnect];
 }
@@ -385,7 +385,7 @@
         case MQTTSessionEventConnectionClosed:
         case MQTTSessionEventConnectionClosedByBroker:
             self.state = MQTTSessionManagerStateClosed;
-#if TARGET_OS_IPHONE == 1
+#if MQTTClient_ISNOT_EXTENSION == 1
             if (self.backgroundTask) {
                 [[UIApplication sharedApplication] endBackgroundTask:self.backgroundTask];
                 self.backgroundTask = UIBackgroundTaskInvalid;
