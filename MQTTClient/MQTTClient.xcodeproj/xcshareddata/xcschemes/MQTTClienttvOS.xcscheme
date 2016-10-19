@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B9AD59981DB806B400CB73B6"
-               BuildableName = "MQTTCLient.framework"
+               BuildableName = "MQTTClient.framework"
                BlueprintName = "MQTTClienttvOS"
                ReferencedContainer = "container:MQTTClient.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B9AD59981DB806B400CB73B6"
-            BuildableName = "MQTTCLient.framework"
+            BuildableName = "MQTTClient.framework"
             BlueprintName = "MQTTClienttvOS"
             ReferencedContainer = "container:MQTTClient.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B9AD59981DB806B400CB73B6"
-            BuildableName = "MQTTCLient.framework"
+            BuildableName = "MQTTClient.framework"
             BlueprintName = "MQTTClienttvOS"
             ReferencedContainer = "container:MQTTClient.xcodeproj">
          </BuildableReference>
